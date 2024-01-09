@@ -1,0 +1,125 @@
+footer{
+    background-color: #f8f9fa;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h1, h3, p{
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+.mainTitle, .postTitle{
+    width: 50%;
+    text-align: center;
+}
+.viewTitle{
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+.main{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:#f8f9fa;
+    margin: 0 2rem;
+    width: 30%;
+    padding: 1rem;
+}
+.butt{
+    width: 50%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.content, .postSection{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+.viewSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    height: 90vh;
+}
+.TextInput{
+    height: 70%;
+    line-height: 150%;
+    resize: vertical;
+    margin: 2rem,0;
+}
+.inputSection{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin: 2rem 0;
+    height: 60vh;
+    justify-content: space-between;
+}
+.postBttn{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+    
+}
+.displayContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.EditTitle{
+    grid-column: span 2;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+.Edit1{
+    grid-area: 2/1/-1/2;
+}
+.Edit2{
+    grid-area: 2/2/-1/-1;
+}
+
+.editBttn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+}
+.save, .delete{
+    width: 20%;
+    padding: 1rem 0;
+    margin: 0 1rem;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.delete{
+    border-radius: 2px;
+    border: 1px solid black;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/content.css">   
+    </head>
+    <body?>
+        <%-include("partials/header.ejs")  %>
+        <div class="postSection">
+            <h1 class="postTitle">Post your blog</h1>
+            <form class="inputSection" action="/view" method="post">
+                <input name="title" type="text" class="feedback-input" placeholder="title" />
+                <textarea name="content" class="feedback-input TextInput" placeholder="content"></textarea>
+                <input class="postBttn" type="submit" value="post" />
+            </form>
+        </div>
+        
+
+
+        <%-include("partials/footer.ejs")  %>
+    </body>
+</html>

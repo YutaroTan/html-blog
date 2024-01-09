@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/content.css">   
+    </head>
+    <body?>
+        <%-include("partials/header.ejs")  %>
+        <div class="postSection">
+            <h1 class="postTitle"><%= viewTitles %></h1>
+            <% if(viewTitles == "Please edit your blog below") {%>
+                <form class="inputSection" action="/view" method="post">
+                    <textarea name="Editingtitle" type="text" class="feedback-input" placeholder="title" ><%= EditTitle %></textarea>
+                    <textarea name="Editingcontent" class="feedback-input TextInput" placeholder="content"><%= EditContent %></textarea>
+                    <div class="editBttn">
+                        <input class="postBttn save" type="submit" value="Save" />
+                        <button class="postBttn delete"><a href="/view" >delete</button>
+                    </div>
+                </form>
+                
+            <% } %>
+        </div>
+        
+
+
+        <%-include("partials/footer.ejs")  %>
+    </body>
+</html>
